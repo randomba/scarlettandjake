@@ -67,6 +67,10 @@ aside {
     padding: 0;
 }
 
+.min-padding {
+    padding: 25px;
+}
+
 // Navigation
 
 .navbar-default {
@@ -110,7 +114,7 @@ aside {
     }
     @media (min-width: 768px) {
         background-color: transparent;
-        border-color: rgba(white, .3);
+        border-color: rgba(white, 0);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
             &:hover,
@@ -155,7 +159,7 @@ header {
     min-height: auto;
     @include background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/header_new.jpg');
     text-align: center;
     color: white;
     .header-content {
@@ -165,8 +169,7 @@ header {
         width: 100%;
         .header-content-inner {
             h1 {
-                font-weight: 700;
-                text-transform: uppercase;
+                font-family: 'Playfair Display', serif;
                 margin-top: 0;
                 margin-bottom: 0;
             }
@@ -349,3 +352,53 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+// Form Styling
+input[type=text], input[type=email], select {
+  width: 30%;
+  height: 2em;
+  padding: 12px 5px;
+  margin: 20px 20px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px dotted #ccc;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.5em;
+}
+input[type=number], select {
+  width: 15%;
+  height: 2em;
+  padding: 12px 5px;
+  margin: 20px 20px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px dotted #ccc;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1.5em;
+}
+label {
+  font-size: 1.5em;
+  color: $theme-primary;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+form button {
+  width: 30%;
+  height: 2.5em;
+  padding: 0px 15px;
+  margin: 20px;
+  border: none;
+  font-size: 1.5em;
+  background-color: $theme-primary;
+  color: white;
+  border-radius: 8px;
+}
+
+.registry_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  padding: 50px 0;
+}
